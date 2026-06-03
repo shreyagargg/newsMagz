@@ -1,13 +1,19 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
+
+import Header from "../components/Header"
+import Navbar from "../components/NavBar"
 
 function SignupScreen() {
-
     return(
         <div className="signup-screen">
-            <h1>Signup Screen</h1>
+            <div className="title-bar">
+                <Header />
+                <Navbar />
+           
+            </div>
+            {/* <h1>Signup Screen</h1> */}
         </div>
     )
-
 }
 
 export default SignupScreen
