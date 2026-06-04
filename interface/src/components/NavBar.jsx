@@ -21,7 +21,7 @@ function Navbar() {
   return (
     <>
       <nav className="border-t border-gray-500 max-w-7xl mx-auto px-6">
-        <ul className="flex items-center py-3 text-lg font-semibold">
+        <ul className="flex items-center py-1 text-lg font-semibold">
           {items.map((item, index) => (
             <li key={item} className="flex items-center">
               <a
