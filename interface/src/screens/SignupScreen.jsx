@@ -2,27 +2,33 @@ import { useState } from 'react'
 
 import Header from "../components/Header"
 import Navbar from "../components/NavBar"
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { MdOutlineEmail } from "react-icons/md";
 import { FiLock } from "react-icons/fi";
 
 function SignupScreen() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    // const [isAuthor, setIsAuthor] = useState(false)
     const navigate = useNavigate()
 
-    const handleSignup = async()=>{
+    const handleSignup = async () => {
         const res = await fetch("http://localhost:3000/api/auth/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({email, password})
+            body: JSON.stringify({ email, password })
         })
         const data = await res.json()
         console.log("data\n")
         console.log(data)
     }
+
+    // const handleChange = (event) => {
+    //     setIsAuthor(event.target.checked)
+    // }
+
     return (
         <div className="signup-screen">
             {/* <div className="title-bar"> */}
@@ -76,17 +82,21 @@ function SignupScreen() {
 
                         <input
                             type="password"
-                            value = {password}
+                            value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             placeholder="Password"
                             className="w-full border rounded p-3 pl-10"
                         />
                     </div>
+                    {/* <label>
+                        <input type="checkbox" checked={isAuthor} onChange={handleChange} className="mr-2" />
+                        I am an author
+                    </label> */}
                 </div>
                 <button className="mt-4 w-full bg-black rounded relative overflow-hidden border border-black
     px-4 py-2 text-white z-10 before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-white
     before:transition-all before:duration-500 before:ease-in-out before:-z-10 hover:text-black hover:before:w-full"
-                onClick={handleSignup}>
+                    onClick={handleSignup}>
                     SIGN UP
                 </button>
             </main>

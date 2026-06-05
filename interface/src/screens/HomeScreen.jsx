@@ -1,5 +1,6 @@
 // import React, { useState } from 'react'
 
+import Footer from "../components/Footer";
 import Header from "../components/Header"
 import Navbar from "../components/NavBar"
 
@@ -112,6 +113,8 @@ function HomeScreen() {
                 </div>
             </div>
             <div className=" p-4 border border-gray-800  w-max bg-yellow-200"></div>
+
+            <Footer />
         </div>
     )
 }
