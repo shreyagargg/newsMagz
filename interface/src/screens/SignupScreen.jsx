@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import Header from "../components/Header"
 import Navbar from "../components/NavBar"
+import Footer from "../components/Footer"
 import { useNavigate } from "react-router-dom"
 import { MdOutlineEmail } from "react-icons/md";
 import { FiLock } from "react-icons/fi";
@@ -100,6 +101,7 @@ function SignupScreen() {
                     SIGN UP
                 </button>
             </main>
+            <Footer />
         </div>
     )
 }

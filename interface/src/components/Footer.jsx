@@ -1,84 +1,91 @@
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaXTwitter,
+} from "react-icons/fa6";
+
 function Footer() {
   return (
-    <footer className="mx-4 md:mx-4 lg:mx-4 mt-10 bg-primary text-white rounded-xl">
-      <div className="max-w-7xl mx-auto px-6 py-10">
-        
-        {/* Top Section */}
+    <footer className="mx-4 mt-12 bg-primary text-white rounded-2xl">
+      <div className="max-w-7xl mx-auto px-6 pt-10 pb-4">
+
         <div className="flex flex-col md:flex-row justify-between gap-10">
 
-          {/* Logo / Brand */}
           <div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+            <h2 className="text-4xl md:text-5xl font-bold">
               GramSabha India
             </h2>
-            <p className="mt-3 text-sm md:text-base text-gray-200 max-w-sm">
-              Independent journalism focused on rural India, governance,
-              politics, and social issues.
+
+            <p className="mt-3 text-gray-200 max-w-sm">
+              Independent journalism focused on rural India,
+              governance, politics, and social issues.
             </p>
           </div>
 
-          {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-xl mb-3">
+            <h3 className="text-xl font-semibold mb-4">
               Quick Links
             </h3>
 
-            <ul className="flex flex-col gap-2">
-              <li className="cursor-pointer hover:underline">
+            <ul className="space-y-2">
+              <li className="hover:underline cursor-pointer">
                 About Us
               </li>
-              <li className="cursor-pointer hover:underline">
+              <li className="hover:underline cursor-pointer">
                 Contact Us
               </li>
-              <li className="cursor-pointer hover:underline">
+              <li className="hover:underline cursor-pointer">
                 Careers
               </li>
-              <li className="cursor-pointer hover:underline">
+              <li className="hover:underline cursor-pointer">
                 Privacy Policy
-              </li>
-              <li className="cursor-pointer hover:underline">
-                Terms of Service
               </li>
             </ul>
           </div>
 
-          {/* Socials */}
           <div>
-            <h3 className="font-semibold text-xl mb-3">
+            <h3 className="text-xl font-semibold mb-4">
               Follow Us
             </h3>
 
             <div className="flex gap-4">
-              <a href="#" aria-label="Facebook">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-                  alt="Facebook"
-                  className="w-7 h-7 hover:scale-110 transition"
+
+              <a href="#">
+                <FaFacebookF
+                  size={24}
+                  className="hover:scale-125 transition"
                 />
               </a>
 
-              <a href="#" aria-label="Twitter">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
-                  alt="Twitter"
-                  className="w-7 h-7 hover:scale-110 transition"
+              <a href="#">
+                <FaXTwitter
+                  size={24}
+                  className="hover:scale-125 transition"
                 />
               </a>
 
-              <a href="#" aria-label="Instagram">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/733/733558.png"
-                  alt="Instagram"
-                  className="w-7 h-7 hover:scale-110 transition"
+              <a href="#">
+                <FaInstagram
+                  size={24}
+                  className="hover:scale-125 transition"
                 />
               </a>
+
+              <a href="#">
+                <FaYoutube
+                  size={24}
+                  className="hover:scale-125 transition"
+                />
+              </a>
+
             </div>
           </div>
+
         </div>
 
-        {/* Divider */}
         <div className="border-t border-white/20 mt-8 pt-6">
-          <p className="text-center text-sm md:text-base text-gray-200">
+          <p className="text-center text-gray-200">
             © 2026 THG Publishing Pvt Ltd. All rights reserved.
           </p>
         </div>

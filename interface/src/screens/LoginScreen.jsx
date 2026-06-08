@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import Header from "../components/Header"
 import Navbar from "../components/NavBar"
+import Footer from "../components/Footer"
 import { MdOutlineEmail } from "react-icons/md";
 import { FiLock } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
@@ -104,6 +105,7 @@ function LoginScreen() {
 
             {/* </div> */}
             {/* <h1>Signup Screen</h1> */}
+            <Footer />
         </div>
     )
 }

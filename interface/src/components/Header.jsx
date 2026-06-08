@@ -13,10 +13,8 @@ function Header() {
 
   return (
     <>
-      <header className="flex items-center justify-between px-4 md:px-6 py-4 max-w-7xl mx-auto border-b md:border-b-0 border-gray-100">
-        <h1
-          className="font-['Cormorant_Garamond'] text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-primary select-none tracking-tight"
-        >
+      <header className="flex items-center justify-between px-4 md:px-6 py-2 max-w-7xl mx-auto border-b md:border-b-0 border-gray-100">
+        <h1 className="font-['Cormorant_Garamond'] text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-primary select-none tracking-tight">
           GRAM SABHA INDIA
         </h1>
 
